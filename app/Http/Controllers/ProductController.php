@@ -25,11 +25,7 @@ class ProductController extends Controller
                 'Jollibee', "McDonald's", 'KFC'
             ]
         ];
-
-        if (!array_key_exists($theme, $themes)) {
-            abort(404); // Not found
-        }
-
+        
         $products = $themes[$theme];
         return view('products.index', compact('products', 'theme'));
     }
