@@ -25,8 +25,10 @@ class ProductController extends Controller
                 'Jollibee', "McDonald's", 'KFC'
             ]
         ];
-        
+
         $products = $themes[$theme];
         return view('products.index', compact('products', 'theme'));
     }
 }
+
+
